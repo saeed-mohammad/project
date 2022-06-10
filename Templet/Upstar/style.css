@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: white;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+}
+header span {
+  font-size: 20px;
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+span {
+  font-size: 14px;
+}
+
+.orange {
+  color: #ffad61;
+}
+
+header img {
+  padding: 8px;
+}
+
+header h1 {
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+header img,
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+header ul {
+  padding-top: 8px;
+}
+
+header li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #105749;
+  margin: 0 15px;
+}
+
+header button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #105749;
+  margin-left: 10px;
+}
+
+.btn-white {
+  background: white;
+  color: #105749;
+}
+
+.btn-white:hover {
+  background: #ffad61;
+  color: white;
+}
+
+.btn-green {
+  background: #105749;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-green:hover {
+  background: #c7ff9b;
+  color: #105749;
+}
+
+.Bgreen {
+  background: #105749;
+}
+section {
+  width: 100%;
+}
+.banner1 span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffad61;
+}
+.banner1 h2 p {
+  color: white;
+  margin-bottom: 10vh;
+}
+.banner1 h2 {
+  font-size: 36px;
+}
+.banner1 h2 > span {
+  font-size: 36px;
+  color: #c7ff9b;
+}
+
+.banner1 button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+.btn1 {
+  font-weight: bold;
+  border: none;
+  background: #c7ff9b;
+  color: #105749;
+}
+.btn1:hover {
+  cursor: pointer;
+  background: #105749;
+  color: white;
+}
+.btn2 {
+  font-weight: bold;
+  background: #105749;
+  color: white;
+}
+.btn2:hover {
+  cursor: pointer;
+  background: #c7ff9b;
+  color: #105749;
+}
+.banner-left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+.bck_img {
+  background: url(img/2.webp) right top no-repeat,
+    url(img/bg.png) right bottom no-repeat;
+}
+.right-img {
+  display: inline-block;
+  width: 50%;
+  margin-left: -5px;
+  vertical-align: middle;
+}
+
+.banner2 span {
+  color: #105749;
+  font-size: 12px;
+  font-weight: bold;
+}
+.banner2 h2 > span {
+  font-size: 36px;
+  color: #ffad61;
+}
+.banner2 p {
+  color: #105749;
+  font-size: 15px;
+}
+.banner2 h2 {
+  font-size: 36px;
+  color: #105749;
+  margin-bottom: 15vh;
+}
+
+.btn3 {
+  font-weight: bold;
+  border: none;
+  border: 2px solid #105749;
+  background: white;
+  color: #105749;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+.btn3:hover {
+  cursor: pointer;
+  background: #c7ff9b;
+  color: white;
+}
+.left-img {
+  display: inline-block;
+  margin-left: -5px;
+  width: 50%;
+  vertical-align: middle;
+}
+.banner-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+.banner3 h2,
+.banner3 p {
+  color: #105749;
+  margin: 5vh 0;
+}
+.banner3 span {
+  font-weight: bold;
+  font-size: 15px;
+  color: #105749;
+}
+.banner3 h2 > span {
+  font-size: 36px;
+  color: #ffad61;
+}
+.banner3 h2 {
+  font-size: 36px;
+}
+.banner4 h2 {
+  font-size: 36px;
+  color: white;
+}
+.banner4 h3 {
+  font-size: 24px;
+  color: white;
+}
+.banner4 h2,
+.banner4 p {
+  color: white;
+}
+.banner4 li {
+  list-style: none;
+}
+.banner4 span {
+  font-size: 15px;
+}
+.banner4 img {
+  width: 600px;
+  height: 600px;
+  margin: 15vh 0;
+}
+.number {
+  display: inline-block;
+  background: #ffad61;
+  color: #105749;
+  padding: 3vh 5vh;
+  border-radius: 10px;
+}
+
+.banner5 li h2 p h3 {
+  color: #105749;
+}
+.center-banner {
+  color: #105749;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30vh;
+  padding-bottom: 15vh;
+}
+.center-banner > span {
+  color: #105749;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.get-started li {
+  list-style: none;
+}
+.banner5 ul > li {
+  position: relative;
+}
+.banner5 li > li {
+  position: absolute;
+}
+
+.get-started li h3 p {
+  color: #105749;
+}
+.get-started > li {
+  display: inline-block;
+  color: #105749;
+  margin: 20px;
+}
+
+.banner6-left {
+  width: 50%;
+  display: inline-block;
+}
+.banner6-right {
+  width: 50%;
+  float: right;
+}
+.banner6::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.section-6 li {
+  list-style: none;
+  border: 1px solid gray;
+  padding: 5vh;
+  margin: 5vh 0px;
+  border-radius: 10px;
+}
+.banner6 > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #105749;
+}
+.banner6 h2,
+span {
+  font-size: 36px;
+  color: #105749;
+}
+.banner7 {
+  text-align: center;
+  background: #105749;
+  padding: 20vh 0;
+  border-radius: 50px;
+  margin-bottom: 45vh;
+}
+.banner7 > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #c7ff9b;
+}
+.banner7 p {
+  margin: 5vh 0;
+  color: white;
+}
+.banner7 h2,
+span {
+  font-size: 36px;
+  color: white;
+  margin: 5vh 0;
+}
+.banner7 button {
+  padding: 10px 25px;
+  margin: 0 8px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+footer li {
+  list-style: none;
+}
+.footer-list > li {
+  display: inline-block;
+  width: 16%;
+  vertical-align: top;
+}
+.footer-list a,
+h4 {
+  text-decoration: none;
+  color: #105749;
+  padding: 0px 10px;
+}
+.footer-alink li {
+  margin: 15px 0;
+  font-size: 12px;
+}

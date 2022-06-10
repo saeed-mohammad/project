@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background: aqua; */
+}
+article{
+    border: 1px solid grey;
+    
+}
+header {
+    text-align: center;
+    margin-top: 25px;
+}
+
+header p {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+header span {
+    padding: 8px 8px;
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.article article{
+    margin-bottom: 20px;
+}
+section ul {
+    float: left;
+    width: 60%;
+    /* background: #fff; */
+    padding: 0;
+    margin-left: 20px;
+}
+
+.art img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+article h2,p{
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-bottom: 20px;
+}
+
+article h4 {
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.box {
+    background: #000;
+    color: #fff;
+    padding: 1px 5px;
+}
+
+.circle {
+    background: #000;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 10px;
+}
+
+article button {
+    padding: 8px 15px;
+    margin-bottom: 35px;
+}
+
+button {
+    border: 1px solid gray;
+}
+
+
+
+section aside {
+    width: 38%;
+    box-sizing: border-box;
+    float: right;
+    /* border: 2px solid black; */
+}
+
+aside ul {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.asd-face img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+aside h2,h3,p {
+    margin-left: 10px;
+}
+
+.asd img {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+aside h3 {
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+.tag li{
+display:inline-block;
+
+padding: 0 10px;
+margin-left: 10px;
+margin-right: 0px;
+margin-top: 10px;
+}
+
+
+
+main::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer {
+    width: 100%;
+    background: rgb(156, 162, 196);
+    padding: 30px;
+}
+
+footer button {
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+}
+
+.btn {
+    align-items: left;
+    background: rgb(156, 162, 196);
+}
+
+.btn .none {
+    background: rgb(136, 144, 192);
+}
+
+footer p {
+    margin-top: 15px;
+    color: #fff;
+    background: rgb(156, 162, 196);
+}
+
+footer a {
+    color: #fff;
+    background: rgb(156, 162, 196);
+}

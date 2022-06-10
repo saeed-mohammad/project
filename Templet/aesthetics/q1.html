@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .links-2 li{
+            display: inline-block;
+            width: 33%;
+        }
+        .links-2>li {
+            width: 33%;
+            display: inline-block;
+        }
+        .img-wrap {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+        }
+
+        .img-wrap img {
+            opacity: 1;
+        }
+
+        .img-wrap:hover img {
+            opacity: 0;
+            transition: .5s ease-in-out;
+        }
+
+        .img-wrap:hover .overlay {
+            opacity: 1;
+        }
+        button{
+    padding: 12px 24px;
+    margin-left: 15px;
+    border: none;
+    font-weight: bold;
+    background: rgb(189, 176, 176);
+    border-radius: 5px;
+
+}
+        button:hover{
+    background: #914332;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <ul class="links-2">
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/x.webp" alt="">
+                    </div>
+                    <h3>Office Life Campaign - Boost your <br> creativity</h3>
+                </li>
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/y.jpg" alt="">
+                    </div>
+                    <h3>A brand-new advertising idea</h3>
+                </li>
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/z.jpg" alt="">
+                    </div>
+
+                    <h3>Coca-Cola Summer Concept <br> Campaign - 2021</h3>
+                </li>
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/y.jpg" alt="">
+                    </div>
+                    <h3>Ad Campaign - I love you as much <br> as I love Nutella</h3>
+                </li>
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/z.jpg" alt="">
+                    </div>
+                    <h3>Coca-Colla Next Door Campaign - <br> conceptual</h3>
+                </li>
+                <li>
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <button>Sell all project</button>
+                        </div>
+                        <img src="img/x.webp" alt="">
+                    </div>
+                    <h3>Starbucks secret is a smile when <br> you get your latte</h3>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

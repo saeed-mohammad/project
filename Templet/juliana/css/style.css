@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Hind+Guntur:wght@300&family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Castoro', serif;
+
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+:root {
+    --title-b: black;
+    --title-w: white;
+    --bg-color1: #eee;
+    --bg-color2: rgb(218, 206, 155);
+    --para: grey;
+    --btn-clr: rgb(150, 150, 18);
+    --bg-black1: rgb(2, 2, 2);
+    --bg-black2: rgb(27, 25, 25);
+}
+
+nav {
+    background: var(--title-w);
+}
+
+.top-nav {
+    background: var(--title-b);
+    text-align: right;
+
+}
+
+.top-nav h1 {
+    display: inline-block;
+    margin-left: 1.5rem;
+    color: var(--title-w);
+    padding: .5rem;
+    font-weight: normal;
+}
+nav{
+
+    background: rgba(255, 255, 255, 0.2);
+}
+.nav {
+    position: relative;
+}
+
+.nav h1 {
+    color: var(--title-b);
+    padding: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.nav li:hover {
+    background: grey;
+    padding: 15px 5px;
+}
+
+.nav a {
+    color: var(--title-b);
+    width: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 1.5rem;
+}
+
+nav ul {
+    width: 89%;
+    display: inline-block;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    margin-left: .5rem;
+    vertical-align: middle;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+input {
+    position: absolute;
+    display: none;
+}
+.menu {
+    position: absolute;
+    right: 3rem;
+    top: 5.5rem;
+    z-index: 1;
+    display: none;
+}
+
+.bar {
+    width: 35px;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+}
+
+.hero {
+    background: url(../img/oscar-aguilar-elias-B5p9If-Xic8-unsplash.jpg) no-repeat;
+    height: 400px;
+    position: relative;
+    transform: translateY(-5rem);
+    z-index: -1;
+}
+
+.hero-right {
+    position: absolute;
+    top: 50%;
+    right: -15rem;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    color: var(--title-w);
+    font-size: 2rem;
+}
+
+.rlw {
+    color: var(--title-w);
+    background: var(--btn-clr);
+    border: none;
+    padding: 1rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+button {
+    color: var(--title-b);
+    background: transparent;
+    border: 1px solid;
+    padding: 1rem;
+    margin-left: .5rem;
+    cursor: pointer;
+
+}
+
+.explore {
+    margin: 10rem 0;
+}
+
+.explore-left {
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.explore-right {
+    width: 50%;
+    transform: translateX(30px);
+    margin-left: -5px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.explore h3 {
+    font-size: 2.5rem;
+}
+
+.explore-right h4 {
+    font-size: 2rem;
+}
+
+.explore-right p {
+    color: var(--title-b);
+    font-size: 1.2rem;
+
+}
+
+.new {
+    padding: .2rem .1rem;
+}
+
+.explore-right button {
+    margin-bottom: 1rem;
+}
+
+
+
+.news {
+    background: var(--bg-color1);
+    padding: 10rem 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.news-left {
+    width: 60%;
+    display: inline-block;
+    padding-right: 1rem;
+    vertical-align: text-top;
+}
+
+.news h4 {
+    font-size: 1.2rem;
+}
+
+.news a {
+    color: var(--title-b);
+    font-size: 1.1rem;
+}
+
+.news-right {
+    width: 40%;
+    margin-left: -5px;
+    display: inline-block;
+    vertical-align: text-top;
+    padding-left: 1rem;
+}
+
+/* .news-right h4{
+    font-size: 1.2rem;
+} */
+/* .news-right a{
+    color: var(--title-b);
+    font-size: 1.1rem;
+} */
+.news-right p {
+    margin-top: 5px;
+}
+
+.img {
+    margin-top: 1rem;
+}
+
+
+
+
+.darker {
+    background: url(../img/oscar-aguilar-elias-B5p9If-Xic8-unsplash.jpg) no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.darker-left {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    color: var(--title-w);
+    font-size: 2rem;
+}
+
+.darker-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.darker-left button {
+    margin-top: 5rem;
+}
+
+
+.getting,
+.meet,
+.juliana {
+    background: var(--bg-color2);
+}
+
+.getting {
+    position: relative;
+}
+
+.getting-right {
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.getting-left {
+    width: 50%;
+    display: inline-block;
+
+}
+
+.getting-left-inside {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.getting-left-inside h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.getting-left-inside p {
+    margin-bottom: .5rem;
+}
+
+.getting-left-inside button {
+    margin: 1rem .5rem 0 0;
+}
+
+
+.meet {
+    position: relative;
+}
+
+.meet-left {
+    width: 50%;
+    display: inline-block;
+}
+
+.meet-right {
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.meet-right-inside {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    right: -5%;
+    transform: translate(-50%, -50%);
+}
+
+.meet-right-inside h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.meet-right-inside p {
+    margin-bottom: .5rem;
+}
+
+.meet-right-inside button {
+    margin: 1rem .5rem 0 0;
+}
+
+
+
+
+.juliana {
+    position: relative;
+}
+
+.juliana-left {
+    width: 50%;
+    display: inline-block;
+}
+
+.juliana-right {
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.juliana-left-inside {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.juliana-left-inside h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.juliana-left-inside p {
+    margin-bottom: .5rem;
+}
+
+.juliana-left-inside button {
+    margin: 1rem .5rem 0 0;
+}
+
+
+
+
+.shop {
+    background: url(../img/oscar-aguilar-elias-B5p9If-Xic8-unsplash.jpg) no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.shop-right {
+    position: absolute;
+    top: 50%;
+    right: -15rem;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    color: var(--title-w);
+    font-size: 2rem;
+}
+
+.shop h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.shop p {
+    margin-bottom: 2rem;
+}
+
+.shop button {
+    margin-left: 0;
+}
+
+
+.ride {
+    padding: 10rem 0;
+}
+
+.ride-left {
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.ride-left img {
+    width: 300px;
+}
+
+.ride-left p {
+    margin-bottom: 1rem;
+}
+
+.ride-right {
+    width: 50%;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: text-top;
+}
+
+.ride-right button {
+    margin-bottom: 1.5rem;
+}
+
+.ride-img img {
+    width: 48%;
+    display: inline-block;
+    padding: .5rem;
+
+}
+
+.ride-bottom-img {
+    width: 48%;
+    padding: .5rem;
+}
+
+
+
+.footer-top {
+    background: var(--bg-black2);
+    padding: 10rem 0;
+}
+
+.footer-top>ul {
+    text-align: center;
+}
+
+.ftr-list {
+    width: 20%;
+    display: inline-block;
+    vertical-align: text-top;
+    text-align: initial;
+}
+
+.ftr-list h4 {
+    color: var(--title-w);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.ftr-list li {
+    font-size: 1.2rem;
+    color: var(--para);
+}
+
+.footer-bottom {
+    background: #000;
+    color: white;
+}
+
+.footer-bottom h1 {
+    display: inline-block;
+    font-weight: normal;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.footer-bottom i {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.footer-bottom ul {
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+}
+
+.footer-bottom li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+
+@media(min-width:1024px) {
+    html {
+        font-size: 80%;
+    }
+
+    nav ul {
+        width: 83%;
+    }
+
+    .hero-right {
+        width: 50%;
+    }
+
+    .darker-left {
+        left: 50%;
+        width: 50%;
+    }
+    .shop-right {
+        right: -8rem;
+        width: 50%;
+    }
+
+
+
+}
+
+
+
+
+
+@media(min-width:770px) and (max-width:1023px) {
+    html {
+        font-size: 66%;
+    }
+
+    nav ul {
+        width: 80%;
+    }
+
+    .hero-right {
+        right: 0;
+    }
+
+    .darker-left {
+        left: 30%;
+        width: 50%;
+    }
+
+    .shop-right {
+        right: -20rem;
+        width: 50%;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 60%;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav ul {
+        width: 100%;
+    }
+
+    .nav li {
+        display: block;
+        margin: .5rem 0;
+    }
+
+    
+
+    .menu {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    nav input:checked~ .nav ul{
+        display: block;
+    }
+
+    .right {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 60%;
+    }
+
+    .shop-right {
+        width: 60%;
+    }
+
+    .darker-left {
+        left: 30%;
+        width: 50%;
+    }
+
+}
+
+@media(max-width:700px) {
+    html {
+        font-size: 45%;
+    }
+
+    .ftr-list {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+    .ftr-list h4,.ftr-list li {
+        font-size: 2rem;
+    }
+
+    .explore-left {
+        width: auto;
+    }
+
+    .darker-left {
+        left: 50%;
+    }
+}
+
+@media(max-width:560px) {
+    section {
+        padding: 1.5rem;
+    }
+
+    .getting-left-inside {
+        transform: none;
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .getting-right {
+        width: 100%;
+    }
+
+    .ride-left img {
+        width: 95%;
+    }
+
+    .meet-right-inside {
+        transform: none;
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .meet-left {
+        width: 100%;
+    }
+
+    .meet-right img {
+        width: 95%;
+    }
+
+    .juliana-left-inside {
+        transform: none;
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .juliana-right {
+        width: 100%;
+    }
+
+    .juliana-left img {
+        width: 95%;
+    }
+}
+
+@media(max-width:419px) {
+    .hero-right {
+        left: 50%;
+    }
+
+    .getting-left {
+        width: 80%;
+    }
+
+    .meet-right {
+        width: 80%;
+    }
+
+    .juliana-left {
+        width: 80%;
+    }
+
+    .shop-right {
+        left: 50%
+    }
+
+    ;
+
+    .ride-left {
+        width: 100%;
+    }
+
+    .ride-right {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .footer-bottom ul {
+        width: 100%;
+        text-align: center;
+    }
+}

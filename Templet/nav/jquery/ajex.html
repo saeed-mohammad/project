@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajex</title>
+    <style>
+      body {
+        background: #eee;
+      }
+      .container {
+        background: #fff;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>check ajax request</h1>
+      <button id="fatchbtn">Fatch</button>
+      <button id="backupbtn">backup</button>
+    </div>
+    <script>
+      let fatchbtn = document.getElementById("fatchbtn");
+      fatchbtn.addEventListener("click", fatchbtnevent);
+      function fatchbtnevent() {
+        console.log("fatchbtnevent");
+        // Instantaite xhr object...
+        const xhr = new XMLHttpRequest();
+        // open the object..
+        // xhr.open("get", "js/new2.json", true);
+
+        // use this for Post request..
+        xhr.open("POST", "https://api.instantwebtools.net/v1/airlines", true);
+
+        // what to do when response is ready...
+        xhr.onload = function () {
+          console.log(this.responseText);
+        };
+        // send the request..
+        xhr.send();
+        console.log("we are done");
+      }
+    </script>
+  </body>
+</html>

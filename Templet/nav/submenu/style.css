@@ -1,0 +1,190 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    background: #fff;
+    position: relative;
+}
+
+nav h1 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.nav-list {
+    display: inline-block;
+    width: 79%;
+    text-align: right;
+    background: yellow;
+    vertical-align: middle;
+}
+
+
+
+nav a {
+    margin: auto 10px;
+    color: black;
+}
+
+nav li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 5px;
+    border-radius: 5px;
+    vertical-align: text-top;
+
+    /* this one also use in .dropdown */
+    position: relative;
+}
+
+
+
+/* sub menu */
+.dropdown {
+    position: absolute;
+    left: -40px;
+    top: 40px;
+    text-align: initial;
+}
+
+.dropdown li {
+    background: yellow;
+    width: 80px;
+    margin-bottom: 1px;
+    display: none;
+}
+
+nav li:hover>.dropdown li {
+    display: block;
+}
+
+.sub-dropdown {
+    position: absolute;
+}
+
+.sub-dropdown li {
+    background: yellow;
+    display: none;
+    visibility: hidden;
+    width: 120px;
+    transform: translate(36px, -27px);
+}
+
+.dropdown li:hover>.sub-dropdown li {
+    display: block;
+    visibility: visible;
+}
+
+/* sub menu */
+
+
+
+input {
+    position: absolute;
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    display: none;
+    top: 30px;
+    right: 30px;
+}
+
+.bar {
+    width: 35px;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: black;
+    cursor: pointer;
+}
+
+input:checked~.bar {
+    background: rgb(2, 49, 2);
+}
+
+
+
+
+
+
+.hero {
+    background: url(artin-bakhan-SqLyNHbsLKQ-unsplash.jpg)
+     no-repeat
+      center;
+      background-size: cover;
+    width: 100%;
+    height: 400px;
+} 
+
+/* .hero img{
+    width: 100%;
+    box-sizing: border-box;
+}  */
+
+
+
+
+@media(min-width:769px) and (max-width:1023px) {
+    h1{
+        color: blue;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .menu {
+        display: block;
+        width: 35px;
+    }
+
+    .nav-list {
+        width: 100%;
+        display: none;
+    }
+
+    .nav-list li {
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .nav-list li:hover {
+        background: rgb(219, 205, 205);
+    }
+
+    header input:checked~ul {
+        display: block;
+    }
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    }
+   
+}
+
+
+
+
+

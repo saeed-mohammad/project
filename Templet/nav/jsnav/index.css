@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+.header {
+  padding: 0 40px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a5d8ff;
+  position: relative;
+}
+.nav-link {
+  display: flex;
+  gap: 48px;
+}
+.logo,
+.search {
+  cursor: pointer;
+}
+/* ================ */
+/* search event... */
+/* ================ */
+.search {
+  position: relative;
+}
+.search #search {
+  padding: 8px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 30px;
+  transition: 0.5s linear;
+}
+.search .btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.click_active #search {
+  width: 200px;
+  height: 30px;
+}
+/* ================ */
+/* search event... */
+/* ================ */
+.nav-link li a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+.logo:hover,
+.search:hover,
+.nav-link li a:hover {
+  color: salmon;
+  transition: all 0.3s;
+}
+.hamburger {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+.mobile[name="close"] {
+  display: none;
+}
+.mobile {
+  width: 40px;
+  height: 35px;
+}
+/*==========
+ MAIN
+ =========== */
+.hero {
+  position: relative;
+  background: tomato;
+  height: 200px;
+}
+.hero p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  font-size: 50px;
+  text-transform: capitalize;
+}
+/*==========
+ slider
+ =========== */
+.imageslider {
+  width: 100%;
+  height: 600px;
+  background: steelblue;
+}
+.imageslider h1 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-align: center;
+  padding: 10px;
+}
+.slider {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid black;
+  position: relative;
+}
+.slider-container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+}
+.slider-container img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.prev-btn {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  left: 1%;
+}
+.next-btn {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  right: 1%;
+}
+
+/*==========
+ slider via margin
+ =========== */
+.image-slider-2 {
+  background: lightgrey;
+  height: 600px;
+}
+.carousal-container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid black;
+  position: relative;
+}
+.carousal-slide img {
+  width: 100%;
+  margin: auto;
+}
+.carousal-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.bck-btn {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  left: 1%;
+}
+.nxt-btn {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  right: 1%;
+}
+.navigation-dot {
+  position: absolute;
+}
+.single-dot {
+  position: relative;
+  background: #333;
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.single-dot.active {
+  background: white;
+}
+
+/*==========
+ CaRT...
+ =========== */
+.cart h2 {
+  text-align: center;
+  padding: 15px 0;
+}
+.yellow-caps {
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 35px;
+}
+.cursive-caps {
+  font-family: "Satisfy", cursive;
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+.tab-links {
+  padding: 10px 0;
+  text-align: center;
+}
+.tab-links a {
+  margin: 0 15px;
+  color: #022e36;
+  font-size: 18px;
+  position: relative;
+}
+.tab-links a:hover {
+  color: yellow;
+  transition: 0.2s;
+}
+.tab-links a::after {
+  position: absolute;
+  content: "";
+  background: #022e36;
+  height: 15px;
+  width: 1px;
+  right: -17px;
+  top: 3px;
+}
+.tab-links .a-info::after {
+  display: none;
+}
+.crt {
+  display: flex;
+  justify-content: center;
+}
+
+.single {
+  cursor: pointer;
+  position: relative;
+  border: 1px solid lightgray;
+  margin: 30px;
+  width: 28%;
+}
+
+.single:hover {
+  width: 28.05%;
+  box-shadow: 4px 3px 23px -2px rgba(0, 0, 0, 0.51);
+}
+.single:hover .crt-animation {
+  transform: translateX(0);
+  transition: 0.5s ease-out;
+}
+
+.info h3 {
+  font-size: 30px;
+  color: salmon;
+}
+.info p {
+  font-size: 15px;
+  margin: 3px;
+  color: #9f9f9f;
+}
+.img-wrap {
+  text-align: center;
+  margin: 5px 0;
+}
+.img-wrap img {
+  width: 80%;
+}
+.price-wrap {
+  margin: 15px;
+}
+.price-yellow {
+  background: white;
+  color: yellow;
+  font-size: 35px;
+  padding: 0 15px;
+  display: inline-block;
+}
+.crt-animation {
+  color: white;
+  background: #022e36;
+  font-size: 25px;
+  position: absolute;
+  padding: 3px 24px 3px 4px;
+  transform: translateX(-125px);
+  z-index: -1;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.crt-animation::after {
+  content: "";
+  position: absolute;
+  background-image: url(img/cta-arrow.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 20px;
+  left: 56px;
+  top: 10px;
+}
+.cart-content {
+  display: none;
+}
+#cart-1 {
+  display: block;
+}
+.tab-links .link-active {
+  color: yellow;
+}
+/*==========
+ Responsive
+ =========== */
+@media (max-width: 980px) {
+  .hamburger {
+    display: block;
+    z-index: 10;
+    border: 3px solid black;
+  }
+  .nav-link {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #a5d8ff;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    /* for animation we cant use displaynone therfore */
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .active .nav-link {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+  }
+  .active .hamburger .mobile[name="close"] {
+    display: block;
+  }
+  .active .hamburger .mobile[name="menu"] {
+    display: none;
+  }
+
+  .single {
+    width: 30%;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      body {
+        background: #eee;
+      }
+      #container {
+        /* display: flex; */
+        background: #fff;
+        padding: 5px;
+        margin: 10px;
+      }
+      .item {
+        float: left;
+        width: 15%;
+        padding: 5px;
+        margin: 10px;
+        background: grey;
+      }
+      .item img {
+        width: 100%;
+        height: 100px;
+        margin: 5px 0;
+      }
+      .item .more-info {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-container">
+      <input type="text" name="" id="input-item" />
+      <button id="btn-item">Add</button>
+    </div>
+    <div id="container">
+      <div class="item">
+        <div class="name">NEW_YORK</div>
+        <img src="../jsnav/img/asset.jpg" alt="" />
+        <div class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
+          natus rerum nisi dicta ipsum aspernatur sint nobis delectus quos
+          tenetur odio dolorum corrupti enim praesentium deserunt eius culpa
+          porro consequuntur?
+        </div>
+        <div class="price">1499</div>
+        <button class="addd">Add to Cart</button>
+        <button class="remoo">Remove to Cart</button>
+        <br />
+        <a href="#" class="a-more-info">More Info</a>
+        <div class="more-info">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <br style="clear: both" />
+    </div>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $("#btn-item").on("click", function () {
+          let name = $("#input-item").val();
+          $("#input-item").val("");
+          console.log(name);
+
+          let html = "";
+          html += '<div class="item">';
+          html += '<div class="name">' + name + "</div>";
+          html += '<img src="../jsnav/img/asset.jpg" alt="" />';
+          html += '<div class="description">';
+          html +=
+            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,";
+          html +=
+            "natus rerum nisi dicta ipsum aspernatur sint nobis delectus quos";
+          html +=
+            "tenetur odio dolorum corrupti enim praesentium deserunt eius culpa";
+          html += "porro consequuntur?";
+          html += "</div>";
+          html += ' <div class="price">1499</div>';
+          html += "<button class='addd'>Add to Cart</button>";
+          html += "<button class='remoo'>Remove to Cart</button>";
+          html += "<br />";
+          html += '<a href="#">More Info</a>';
+          html += '<div class="more-info">';
+          html += " Lorem ipsum, dolor sit amet consectetur adipisicing elit.";
+          html += "</div>";
+          html += " </div>";
+
+          $("#container").append(html);
+        });
+        // remove...
+        $("#container").on("click", ".remoo", function () {
+          $(this).parent().remove();
+        });
+
+        // show...
+        $("#container").on("click", ".a-more-info", function (e) {
+          e.preventDefault();
+          $(this).parent().find(".more-info").toggle("slow");
+          //   animate...
+          $(this).animate({ marginLeft: 20, opacity: 0.5 }, 800);
+          $(this).animate({ marginLeft: 0, opacity: 1 }, 1500);
+        });
+
+        $.ajax("../js/new2.json", function (Response) {
+          console.log(Response);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background: #eee;
+        }
+        #container{
+            background: #fff;
+        }
+        .box{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background: #fcf;
+            position: relative;
+        }
+        .sbox{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);                
+            width: 100%;
+            text-align: center;
+            background: grey;
+            color: black;
+            cursor: pointer;
+        }
+        .highlight{
+            color: pink;
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+          <input type="text" placeholder="Name" required></input>
+          <br/>
+          <input type="text"placeholder="Last Name"></input>
+          <br/>
+          <input type="text" placeholder="E-mail" required></input>
+          <br/>
+          <button>Submit</button>
+          <div class="box">
+              <div class="sbox">Click</div>
+            </div>
+            <br>
+            <input type="text" name="" id="input">
+            <input type="text" name="" id="inputt">
+            <div class="input"></div>
+            <div class="inputt"></div>
+            <br>
+          <div class="selecto">
+              <select name="select" id="selecter">
+                  <option value="" data-price="">slect race</option>
+                  <option value="5" data-price="3">5k</option>
+                  <option value="10" data-price="7">10k</option>
+                  <option value="15" data-price="9">Half-Marathon</option>
+                  <option value="20" data-price="11">Marathon</option>
+                </select>
+                <div class="select-msg">...</div>
+          </div>
+        </div>
+        <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+        <script>
+            $(document).ready(function(){
+            $('#container input[placeholder="Last Name"]').addClass('highlight')
+
+            $('.box').on('click','.sbox',function(){
+                $(this).parent().toggleClass('highlight')
+            })
+
+            // input...
+
+            $('#input').on('keydown',function(){
+                let name=$(this).val()
+                $('.input').text('KEYDOWN one letter missing in output , '+name)
+            })
+            $('#inputt').on('keyup',function(){
+                let name=$(this).val()
+                $('.inputt').text('KEYUP Please to meet you , '+name)
+            })
+             
+
+        })
+        
+        // select...
+         $(document).ready(function(){
+             $('#selecter').on('change',function(){
+                 console.log(name)
+                 let name = $('#selecter').text()
+             })
+         })
+     </script>
+</body>
+</html>
