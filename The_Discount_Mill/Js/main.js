@@ -5,6 +5,22 @@ $(document).ready(function () {
     $(".menuLog").toggle();
     $(".menuLogCancel").toggle();
   });
+  //   close dropdown on document click
+  $(document).click(function (event) {
+    if (
+      $(".menuIcon") !== event.target &&
+      !$(".menuIcon").has(event.target).length &&
+      $(".searchImage") !== event.target &&
+      !$(".searchImage").has(event.target).length
+    ) {
+      $(".dropDown").slideUp("fast");
+      $(".menuLog").show();
+      $(".menuLogCancel").hide();
+      // search
+      $(".searchImage").show();
+      $(".searchForm").hide();
+    }
+  });
   //   search
   $(".searchImage").click(function () {
     $(this).hide();
