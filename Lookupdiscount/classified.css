@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;400;500;600;700&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+:root {
+  --primary: #ff4b7a;
+  --secondary: #666;
+  --color-white: white;
+}
+.pink {
+  color: var(--primary);
+  display: block;
+}
+/* header */
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.open,
+.close,
+.search {
+  color: var(--primary);
+  cursor: pointer;
+}
+.open i,
+.close i,
+.search-form i {
+  font-size: 22px;
+  margin: 1px 10px;
+}
+.search-form .search {
+  width: 270px;
+  padding: 2px 2px;
+  border: 1px solid var(--primary);
+
+  display: none;
+}
+.menu-wrap {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.close {
+  display: none;
+}
+.menu {
+  position: relative;
+}
+nav {
+  position: absolute;
+  display: none;
+
+  background: var(--primary);
+  width: 120px;
+  text-align: right;
+  padding: 10px;
+  height: 97px;
+  border-radius: 5px;
+  right: 6px;
+  top: 35px;
+}
+nav a {
+  color: white;
+}
+nav a:hover {
+  color: black;
+}
+/* content */
+.content .wrapper {
+  display: flex;
+}
+.left {
+  width: 70%;
+  margin-right: 20px;
+}
+.right {
+  width: 30%;
+  margin-top: 20px;
+}
+.list {
+  margin: 18px 0;
+  background: #eee;
+}
+.list a {
+  padding: 8px;
+  display: flex;
+}
+.list-left {
+  width: 50%;
+}
+.list-right {
+  width: 50%;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.phone {
+  font-weight: 600;
+}
+.add {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.rating {
+  width: 82px;
+  margin-top: 10px;
+}
+.info {
+  font-size: 15px;
+  color: var(--secondary);
+}
+.distance {
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  color: var(--secondary);
+}
+.num {
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+}
+/* content right */
+.map iframe {
+  width: 100%;
+}
+.cities h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+.city {
+  font-weight: 500;
+}
+.cities ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cities ul li {
+  list-style: disc;
+  width: 150px;
+  margin: 10px;
+}
+.list:hover {
+  box-shadow: 0 17px 11px -13px rgb(0 0 0 / 8%);
+  background-color: #fff;
+  transition: 0.3s linear;
+}
+.list:hover .title {
+  color: var(--primary);
+  text-decoration: underline;
+}
+/* Related */
+.related-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 65px;
+}
+.related-list .list {
+  flex: 1 0 30%;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+/* footer */
+footer {
+  background: black;
+  padding: 20px 0;
+}
+
+.ftr-content {
+  display: flex;
+
+  justify-content: space-between;
+}
+.ftr {
+  flex-basis: 31%;
+}
+/* .ftr-about,
+  .ftr-links {
+    vertical-align: top;
+  } */
+.ftr-about h2,
+.ftr-links h4,
+.ftr-blog h4 {
+  margin-bottom: 20px;
+  color: white;
+}
+.ftr-about p {
+  color: white;
+}
+.ftr li a {
+  color: white;
+}
+.ftr-link-wrap li {
+  width: 50%;
+  display: inline-block;
+  margin-left: -5px;
+  margin-bottom: 20px;
+}
+
+.ftr-blog li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ftr-blog li .img-wrap img {
+  width: 100px;
+}
+.ftr-blog li h5 {
+  color: white;
+  padding: 0 10px;
+}
+/* 7:10*/
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1075px) {
+  .wrapper {
+    width: 90%;
+  }
+  .related-list .list {
+    flex: 1 0 40%;
+  }
+  .content .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+  .map {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .cities ul li {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 932px) {
+  .ftr-link-wrap li {
+    width: 40%;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .ftr-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .ftr-blog ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .ftr {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  header .wrapper {
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+  }
+}
