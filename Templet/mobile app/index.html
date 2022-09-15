@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Mobile_app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MobileApp</title>
 </head>
 
 <body>
@@ -18,24 +19,28 @@
                 <div class="menu">
                     <img src="img/log.webp" alt="logo" class="logo">
                     <ul>
-                        <li><a href="" class="home">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Feature</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Pricing</a></li>
+                        <li><a href="#home" class="home">Home</a></li>
+                        <li><a href="#footer">About</a></li>
+                        <li><a href="#blue">Feature</a></li>
+                        <li><a href="#read">Blog</a></li>
+                        <li><a href="#love">Pricing</a></li>
                         <button class="nav-btn btn-orange">Get Started</button>
                     </ul>
                 </div>
             </nav>
+            <div class="ham">
+                <span></span>
+
+            </div>
         </div>
     </header>
     <main>
-        <section class="feed">
+        <section class="feed" id="home">
             <div class="wrapper">
                 <div class="feed-left">
                     <h1>Feed all your news sources and mailboxes right into <span class="org">
                             Feedbox</span></h1>
-                    <input type="text" placeholder="Your phone number">
+                    <!-- <input type="text" placeholder="Your phone number"> -->
                     <button class="btn-orange">Get Started</button>
                     <ul>
                         <li>
@@ -57,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <section class="read">
+        <section id="read" class="read">
             <div class="wrapper">
                 <h2>Read <span class="org"> everything in one place </span> <br>keep up with important news</h2>
                 <ul>
@@ -126,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="blue">
+        <section class="blue" id="blue">
             <div class="wrapper">
                 <div class="blue-left">
                     <img src="img/1.webp" class="img1" alt="">
@@ -148,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="love">
+        <section class="love" id="love">
             <div class="wrapper">
                 <h2>If you love simplicity, you’ll <br>simply love
                     <span class="org">Feedbox.</span>
@@ -218,7 +223,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="wrapper">
             <div class="left-ftr">
                 <img src="img/log.webp" alt="">
@@ -244,16 +249,6 @@
                             <li><a href="">Pricing</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <h4>Resources</h4>
-                        <ul class="ftr-link">
-                            <li><a href="">Feed Reader App</a></li>
-                            <li><a href="">Download Feedbox</a></li>
-                            <li><a href="">Mail browser app</a></li>
-                            <li><a href="">iOS Version</a></li>
-                            <li><a href="">Android veredion</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -264,6 +259,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
